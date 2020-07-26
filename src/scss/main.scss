@@ -1,0 +1,96 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    background-color: $light-color;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 3px;
+        color: $secondary-color;
+        box-sizing: border-box;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        li {
+            padding: 10px;
+            a {
+                color: $light-color;
+            }
+            a:hover {
+                color: $secondary-color
+            }            
+        }
+    }
+    .social-media {
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10px;
+        span {
+            a {
+                color: $light-color;
+                padding: 5px;
+            }
+
+            a:hover {
+                color: $secondary-color;
+            }
+            
+        }
+    }
+}
+
+main {
+    .banner {
+        background-color: $primary-color;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-description {
+            color: $light-color;
+            padding: 50px;
+            h1 {
+                font-size: 60px;
+            }
+        }
+
+        img {
+            max-width: 500px;
+        }
+        
+    }
+}
+
