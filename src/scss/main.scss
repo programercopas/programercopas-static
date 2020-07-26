@@ -31,6 +31,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     .logo {
         padding: 10px;
         margin: 5px;
@@ -42,22 +43,27 @@ nav {
     ul {
         display: flex;
         list-style-type: none;
+
         li {
             padding: 10px;
+
             a {
                 color: $light-color;
             }
+
             a:hover {
                 color: $secondary-color
-            }            
+            }
         }
     }
+
     .social-media {
         margin-right: 50px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-left: 10px;
+
         span {
             a {
                 color: $light-color;
@@ -67,21 +73,40 @@ nav {
             a:hover {
                 color: $secondary-color;
             }
-            
+
         }
     }
 }
 
 main {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: $archive-color;
+        max-width: 960px;
+        margin: auto;
+    }
+
+    h3 {
+        font-size: 30px;
+        color: $primary-color;
+        margin: 40px 0 30px 0;
+    }
+
     .banner {
+        max-width: 100%;
         background-color: $primary-color;
         padding: 10px;
         display: flex;
         align-items: center;
+        flex-direction: row;
         justify-content: space-between;
+
         &-description {
             color: $light-color;
             padding: 50px;
+
             h1 {
                 font-size: 60px;
             }
@@ -90,7 +115,34 @@ main {
         img {
             max-width: 500px;
         }
-        
+
+    }
+
+    .about {
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                width: 400px;
+                height: 200px;
+                margin-right: 40px;
+            }
+        }
+    }
+
+    .portofolio {
+        .gallery {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 4px auto;
+            flex-wrap: wrap;
+            img {
+                padding: 6px;
+                width: 200px;
+                height: 300px;
+            }
+        }
     }
 }
-
